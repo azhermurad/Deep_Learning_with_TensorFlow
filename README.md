@@ -4,7 +4,6 @@
 
 
 - **Develop TensorFlow Models**: Gain expertise in Computer Vision, Convolutional Neural Networks (CNNs), and Natural Language Processing (NLP).
-- **Access Comprehensive Resources**: Obtain full access to interactive notebooks and downloadable course slides as study guides.
 - **Enhance Machine Learning and Deep Learning Skills**: Test and improve your abilities to confidently tackle the TensorFlow assessment exam.
 - **Integrate Machine Learning**: Learn how to seamlessly incorporate machine learning into practical tools and applications.
 - **Master TensorFlow 2**: Build a variety of machine learning models using the latest advancements in TensorFlow.
