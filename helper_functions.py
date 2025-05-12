@@ -2,6 +2,7 @@ from zipfile import ZipFile
 import os
 import datetime
 import tensorflow as tf
+from sklearn.metrics import precision_recall_fscore_support,accuracy_score
 import matplotlib.pyplot as plt
     
     
@@ -88,3 +89,14 @@ def compare_history(feature_extractors_history, fine_tuning_history, initial_epo
     plt.title('Training and Validation Loss')
     # plt.xlabel('epoch')
     # plt.show()
+
+def calculate_results(y_true, y_pred):
+    """Calculate Model Accuracy, Precision, Recall  and F1-Score"""
+    accuracy = accuracy_score(y_true, y_pred)
+    precision,recall,fscore,_ = precision_recall_fscore_support(y_true, y_pred, average='weighted')
+    return {
+        "accuracy": accuracy,
+        "precison": precision,
+        "recall":recall,
+        "f1_score": fscore
+    }
